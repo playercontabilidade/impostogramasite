@@ -3,1173 +3,348 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-  <title>Impostograma | Automação fiscal</title>
-  <meta
-    name="description"
-    content="Automação fiscal para escritórios contábeis."
-  />
-
+  <title>Impostograma | Gestão e automação para escritórios contábeis</title>
+  <meta name="description" content="Centralize clientes, processos, entregas, financeiro e automações fiscais em um único ambiente. 14 dias grátis." />
+  <meta name="theme-color" content="#582afe" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
-  <link rel="icon" href="/favicon.ico" />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,700;0,9..40,800&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="style.css" />
   <script src="script.js" defer></script>
 </head>
-
 <body>
+  <a class="skip" href="#conteudo">Ir para o conteúdo</a>
+  <div class="progress" aria-hidden="true"><i></i></div>
+
   <header class="header">
-    <div class="container header-content">
-
-      <a href="/" class="logo" aria-label="Impostograma - Página inicial">
-        <img src="images/logo-impostograma-white.svg" alt="Impostograma" />
-      </a>
-
-      <nav class="main-nav" aria-label="Navegação principal">
-        <ul>
-          <li><a href="#sobre">Sobre nós</a></li>
-          <li><a href="#funcionalidades">Funcionalidades</a></li>
-          <li><a href="#como-funciona">Como funciona</a></li>
-          <li><a href="#modulos">Módulos</a></li>
-          <li><a href="#precos">Preços</a></li>
-          <li><a href="#contato">Contato</a></li>
-        </ul>
+    <div class="container header__row">
+      <a class="logo" href="#inicio" aria-label="Impostograma"><img src="images/logo-on-light.png" alt="Impostograma" width="140" height="34" /></a>
+      <nav class="nav" id="nav" aria-label="Principal">
+        <a href="#solucao">Solução</a>
+        <a href="#modulos">Módulos</a>
+        <a href="#kanban">Kanban</a>
+        <a href="#fluxo">Automação</a>
+        <a href="#economia">Economia</a>
+        <a href="#precos">Preços</a>
       </nav>
-
-      <div class="header-actions">
-        <div class="social-links" aria-label="Redes sociais">
-          <a href="https://www.instagram.com/impostograma" class="social-icon" aria-label="Instagram" title="Instagram" target="_blank" rel="noopener noreferrer">
-            <i class="fa-brands fa-instagram" aria-hidden="true"></i>
-          </a>
-          
-        </div>
-        <div class="hero-buttons">
-  
-          <a href="https://impostograma.com/" class="button button-outline">Entrar</a>
-        </div>
+      <div class="header__actions">
+        <a class="ghost" href="https://impostograma.com/">Entrar</a>
+        <a class="btn btn--sm" href="/teste-gratis">Começar grátis</a>
+        <button class="menu" type="button" aria-label="Abrir menu" aria-expanded="false" aria-controls="nav"><span></span><span></span></button>
       </div>
-
     </div>
   </header>
 
-  <main>
-
-    <section class="hero" id="sobre">
-      <div class="container hero-content">
-
-        <div class="hero-text">
-          <img
-            class="hero-logo"
-            src="images/logo-impostograma-white.svg"
-            alt="Impostograma"
-          />
-
-          <h1>Automação fiscal que transforma escritórios contábeis.</h1>
-
-          <p>
-            Gerencie obrigações, documentos e clientes em uma plataforma
-            integrada — do cadastro à entrega.
-          </p>
-
-          <div class="hero-buttons">
-            <a href="/teste-gratis" class="button button-outline button-outline-start">
-              Começar grátis
-            </a>
-
-            <a href="#demonstracao" class="button button-outline button-outline-demo">
-              Ver demonstração
-            </a>
+  <main id="conteudo">
+    <!-- HERO -->
+    <section class="hero" id="inicio">
+      <div class="hero__bg" aria-hidden="true"><span class="orb orb--a"></span><span class="orb orb--b"></span></div>
+      <div class="container hero__grid">
+        <div class="hero__text">
+          <h1>Menos portal.<br /><span class="grad">Mais análise.</span><br />Mais resultado.</h1>
+          <p class="lede">Centralize clientes, processos, entregas, financeiro e automações fiscais em um único ambiente — do cadastro à entrega, sem depender de planilha nem cobrar o cliente no manual.</p>
+          <div class="hero__cta">
+            <a class="btn btn--lg" href="/teste-gratis">Começar grátis <span aria-hidden="true">→</span></a>
+            <a class="btn btn--lg btn--ghost" href="/demonstracao">Agendar demonstração</a>
           </div>
+          <p class="hero__note">14 dias grátis · sem cartão · dados no Brasil · LGPD</p>
+          <div class="metrics">
+            <div><strong data-count="40" data-prefix="+" data-suffix="%">+40%</strong><span>Produtividade</span></div>
+            <div><strong data-count="70" data-prefix="−" data-suffix="%">−70%</strong><span>Retrabalho e erros</span></div>
+            <div><strong data-count="14" data-suffix=" dias">14 dias</strong><span>Teste grátis</span></div>
+          </div>
+        </div>
 
-          <div class="hero-results">
-            <div class="result">
-              <strong>+40%</strong>
-              <span>Produtividade</span>
+        <div class="hero__stage">
+          <div class="shot shot--desk" data-parallax="6">
+            <div class="shot__bar"><i></i><i></i><i></i><span>app.impostograma.com.br</span></div>
+            <img src="images/tela-dashboard.jpg" alt="Painel do Impostograma com pendências, faturamento e composição fiscal" width="1400" height="731" />
+          </div>
+          <div class="shot shot--phone" data-parallax="-10"><img src="images/tela-mobile.jpg" alt="Impostograma no celular: visão geral e pendências de hoje" width="388" height="840" /></div>
+          <div class="float float--1" data-parallax="16"><i class="ico ico--ok"></i><div><b>DAS gerada</b><small>Comércio Norte ME</small></div></div>
+          <div class="float float--2" data-parallax="-12"><i class="ico ico--wa"></i><div><b>Cliente notificado</b><small>via WhatsApp</small></div></div>
+          <div class="float float--3" data-parallax="10">Open Finance</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- TICKER -->
+    <section class="ticker" aria-label="Obrigações suportadas">
+      <div class="ticker__track" id="ticker">
+        <span>NF-e / NFS-e</span><span>IRPJ</span><span>CSLL</span><span>PIS/COFINS</span><span>Adiantamento de salário</span><span>SPED Fiscal</span><span>EFD Contribuições</span><span>DCTF Web</span><span>PGDAS-D</span><span>DAS Mensal</span><span>DIEF</span><span>13º Salário</span><span>eSocial</span>
+      </div>
+    </section>
+
+    <!-- ANTES / DEPOIS -->
+    <section class="section" id="solucao">
+      <div class="container">
+        <div class="intro reveal">
+          <p class="kicker">Sem automação, o escritório trabalha contra o tempo</p>
+          <h2>A dor do dia a dia — e como o Impostograma responde.</h2>
+          <div class="switch" role="group" aria-label="Comparar cenário">
+            <button type="button" class="is-active" data-mode="before">Hoje</button>
+            <button type="button" data-mode="after">Com Impostograma</button>
+            <span class="switch__thumb" aria-hidden="true"></span>
+          </div>
+        </div>
+        <div class="cases reveal" id="cases" data-mode="before">
+          <article class="case spot">
+            <span class="case__tag">Dependência do cliente</span>
+            <p class="case__before">Documento atrasa, chega errado ou some no WhatsApp. O fechamento trava.</p>
+            <p class="case__after">Cobrança e notificação no canal certo; documentos classificados e ligados à entrega.</p>
+          </article>
+          <article class="case spot">
+            <span class="case__tag">Horas no portal</span>
+            <p class="case__before">Repetir captura, cálculo e guia em dezenas de fluxos — difícil escalar a carteira.</p>
+            <p class="case__after">Da nota à DAS e obrigações no mesmo fluxo, com rastreio e menos intervenção manual.</p>
+          </article>
+          <article class="case spot">
+            <span class="case__tag">Prazo e retrabalho</span>
+            <p class="case__before">Planilha paralela, status espalhado e multa que vira desgaste para o escritório.</p>
+            <p class="case__after">Kanban, responsáveis, histórico e alertas — visão clara do que falta e de quem cuida.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- PILARES -->
+    <section class="section section--tint">
+      <div class="container">
+        <div class="intro reveal">
+          <p class="kicker">A operação do escritório, em um só lugar</p>
+          <h2>Menos portal. Mais resultado.</h2>
+        </div>
+        <div class="pillars">
+          <article class="pillar spot reveal"><span class="pillar__i">01</span><h3>Hub operacional</h3><p>Carteira organizada: cadastro, certificado, responsáveis e histórico num só lugar.</p></article>
+          <article class="pillar spot reveal"><span class="pillar__i">02</span><h3>Processos e entregas</h3><p>Obrigações do mês em Kanban: etapas, prazos, anexos e quem cuida de cada uma.</p></article>
+          <article class="pillar spot reveal"><span class="pillar__i">03</span><h3>Automações fiscais</h3><p>O sistema baixa, calcula, declara e gera guia. Menos trabalho manual no portal.</p></article>
+          <article class="pillar spot reveal"><span class="pillar__i">04</span><h3>BPO Financeiro</h3><p>Integração com o banco para conciliação e exportação para a contábil.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <!-- GESTÃO DE CLIENTES -->
+    <section class="section section--tint" id="clientes">
+      <div class="container">
+        <div class="intro intro--center reveal">
+          <p class="kicker">Gestão de clientes</p>
+          <h2>A empresa vira o hub do escritório.</h2>
+        </div>
+        <div class="trio">
+          <article class="trio__i spot reveal"><h3>Ficha operacional</h3><p>Cadastro, certificado, tags e histórico, a empresa vira o hub do escritório.</p></article>
+          <article class="trio__i spot reveal"><h3>Responsáveis certos</h3><p>Fiscal, contábil e pessoal definidos por cliente, sem atrito na equipe.</p></article>
+          <article class="trio__i spot reveal"><h3>Cliente conectado</h3><p>Acesso externo, WhatsApp e e-mail: o cliente acompanha sem ligar o tempo todo.</p></article>
+        </div>
+        <figure class="frame reveal"><div class="frame__bar"><i></i><i></i><i></i></div><img src="images/tela-clientes.jpg" alt="Tela de gestão de clientes do Impostograma" loading="lazy" width="1400" height="716" /></figure>
+      </div>
+    </section>
+
+    <!-- MÓDULOS -->
+    <section class="section" id="modulos">
+      <div class="container">
+        <div class="intro reveal">
+          <p class="kicker">Módulos que sustentam a operação</p>
+          <h2>Do cliente à entrega, com profundidade real.</h2>
+          <p>Gestão, documentos, auditorias, kanban, regras fiscais, Simples e financeiro.</p>
+        </div>
+        <div class="tabs reveal">
+          <div class="tabs__list" role="tablist" aria-label="Módulos" id="modTabs"></div>
+          <div class="tabs__panel" id="modPanel" role="tabpanel" aria-live="polite"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- KANBAN INTERATIVO -->
+    <section class="section section--dark" id="kanban">
+      <div class="container kan">
+        <div class="kan__text reveal">
+          <p class="kicker kicker--light">Processos em Kanban</p>
+          <h2>Veja e mova as etapas. Teste aqui.</h2>
+          <p>Comentários, rastreamento e centralização no mesmo card. Clique em um card para avançar a etapa.</p>
+          <ul class="checks">
+            <li>Avisos direto no WhatsApp</li>
+            <li>Histórico completo de alterações</li>
+            <li>Status, responsável e documentos juntos</li>
+          </ul>
+          <button class="btn btn--light" type="button" id="kanReset">Reiniciar demo</button>
+        </div>
+        <div class="board reveal" id="board" aria-label="Demo de Kanban">
+          <div class="board__bar"><i></i><i></i><i></i><span>Painel de Processos</span></div>
+          <div class="board__cols">
+            <div class="col" data-col="0"><h4><i class="d d--blue"></i>Em andamento <b>0</b></h4><div class="col__cards"></div></div>
+            <div class="col" data-col="1"><h4><i class="d d--ok"></i>Concluída <b>0</b></h4><div class="col__cards"></div></div>
+            <div class="col" data-col="2"><h4><i class="d d--warn"></i>Em espera <b>0</b></h4><div class="col__cards"></div></div>
+          </div>
+          <p class="board__foot" id="boardFoot"></p>
+        </div>
+      </div>
+    </section>
+
+    <!-- FLUXO SIMPLES -->
+    <section class="section" id="fluxo">
+      <div class="container">
+        <div class="intro reveal">
+          <p class="kicker">Automação do Simples Nacional</p>
+          <h2>Da nota à DAS, sem intervenção humana.</h2>
+        </div>
+        <div class="flow" id="flow">
+          <div class="flow__rail" aria-hidden="true"><i id="flowFill"></i></div>
+          <ol class="flow__steps">
+            <li class="flow__step"><span class="flow__n">01</span><div><h3>Captura</h3><p>Captura as notas do período via certificado.</p></div></li>
+            <li class="flow__step"><span class="flow__n">02</span><div><h3>Calcula e declara</h3><p>Calcula o faturamento, transmite e gera a DAS.</p></div></li>
+            <li class="flow__step"><span class="flow__n">03</span><div><h3>Obrigações acessórias</h3><p>Entram no mesmo fluxo, com rastreio — sem depender do portal.</p></div></li>
+          </ol>
+        </div>
+        <figure class="frame frame--narrow reveal"><div class="frame__bar"><i></i><i></i><i></i></div><img src="images/tela-simples.jpg" alt="Memória de cálculo do Simples Nacional" loading="lazy" width="1274" height="870" /><figcaption>Tudo sem intervenção humana: memória de cálculo do Simples Nacional.</figcaption></figure>
+        <div class="split">
+          <article class="panel spot reveal">
+            <h3>Financeiro e conciliação</h3>
+            <p>Conecte contas via Open Finance, controle honorários, faça matching automático e projete o caixa.</p>
+            <ul class="checks checks--dark">
+              <li><b>Importação de movimentações</b> automática via Open Finance, sem baixar e enviar extratos</li>
+              <li><b>Matching automático</b> entre títulos e movimentações bancárias</li>
+              <li><b>Gestão de honorários:</b> cobranças, vencimentos e recebimentos em um só lugar</li>
+              <li><b>Fluxo e projeções:</b> caixa atual e cenários para decidir</li>
+            </ul>
+          </article>
+          <article class="panel panel--brand reveal">
+            <h3>Notificações que chegam no cliente</h3>
+            <p>Avisa prazo, entrega e cobrança no canal certo, sem a equipe cobrar no manual.</p>
+            <div class="chips" id="chips">
+              <button type="button" class="is-active" data-msg="Seu DAS de setembro já está disponível. Vencimento em 3 dias.">E-mail</button>
+              <button type="button" data-msg="Olá! Falta enviar o extrato do cartão para fechar o mês. Envie por aqui.">WhatsApp</button>
+              <button type="button" data-msg="Nova entrega concluída: SPED Fiscal — Tech Soluções.">Sistema</button>
+              <button type="button" data-msg="Alerta: DCTF Web vence amanhã e ainda está em andamento.">Alertas</button>
             </div>
-
-            <div class="result">
-              <strong>−70%</strong>
-              <span>Retrabalho e erros operacionais</span>
-            </div>
-          </div>
+            <p class="bubble" id="bubble">Seu DAS de setembro já está disponível. Vencimento em 3 dias.</p>
+          </article>
         </div>
-
-        <div class="hero-image">
-          <img
-            src="images/alt_image.png"
-            alt="Painel de processos da plataforma"
-          />
-        </div>
-
       </div>
     </section>
 
-    <section class="modules-strip" id="modulos">
-
-        
-      <ul>
-        <li>NF-e / NFS-e</li>
-        <li>IRPJ</li>
-        <li>CSLL</li>
-        <li>PIS/COFINS</li>
-        <li>Adiantamento de salário</li>
-        <li>SPED Fiscal</li>
-        <li>EFD Contribuições</li>
-        <li>DCTF Web</li>
-        <li>PGDAS-D</li>
-        <li>DAS Mensal</li>
-        <li>DIEF</li>
-        <li>13º Salário</li>
-        <li>eSocial</li>
-      </ul>
+    <!-- PLATAFORMA MULTI-DEVICE -->
+    <section class="section section--tint">
+      <div class="container device">
+        <div class="device__text reveal">
+          <p class="kicker">Produtividade, controle e previsibilidade</p>
+          <h2>Sua equipe e seu cliente na mesma página.</h2>
+          <ul class="values">
+            <li><b>Processos padronizados</b><span>Fluxos estruturados e moldes reutilizáveis.</span></li>
+            <li><b>Automação de etapas</b><span>Tarefas, prazos e notificações com menos manual.</span></li>
+            <li><b>Visão da operação</b><span>Responsáveis, pendências e entregas em tempo real.</span></li>
+          </ul>
+        </div>
+        <div class="device__img reveal"><img src="images/alt_image.png" alt="Painel de entregas no computador e lista de tarefas no celular" loading="lazy" /></div>
+      </div>
     </section>
 
-    <section id="funcionalidades">
-      <!-- Conteúdo de funcionalidades -->
+    <!-- CALCULADORA -->
+    <section class="section" id="economia">
+      <div class="container">
+        <div class="intro reveal">
+          <p class="kicker">Simule sua economia</p>
+          <h2>Quantas horas o seu escritório recupera?</h2>
+          <p>Estimativa simples, baseada na redução de retrabalho de 70% divulgada pelo produto. Resultados reais variam por carteira.</p>
+        </div>
+        <div class="calc reveal">
+          <div class="calc__inputs">
+            <label>Empresas na carteira <output id="oCompanies">60</output>
+              <input type="range" id="rCompanies" min="10" max="300" step="5" value="60" />
+            </label>
+            <label>Horas de trabalho manual por empresa/mês <output id="oHours">6</output>
+              <input type="range" id="rHours" min="1" max="20" step="1" value="6" />
+            </label>
+          </div>
+          <div class="calc__out">
+            <div><small>Horas manuais hoje</small><b id="cNow">360</b><span>h/mês</span></div>
+            <div class="calc__hl"><small>Horas liberadas</small><b id="cSaved">252</b><span>h/mês</span></div>
+            <div><small>Equivale a</small><b id="cDays">31</b><span>dias úteis</span></div>
+          </div>
+        </div>
+      </div>
     </section>
 
-    <section id="como-funciona">
-      <!-- Conteúdo de como funciona -->
+    <!-- INTEGRAÇÕES / SOBRE -->
+    <section class="section section--tint" id="sobre">
+      <div class="container about">
+        <div class="reveal">
+          <p class="kicker">Impostograma</p>
+          <h2>Uma operação contábil conectada.</h2>
+          <p class="about__p">Clientes, obrigações, documentos, tarefas, automações fiscais e financeiro ficam no mesmo ambiente — com histórico, prazos e clareza de responsabilidade.</p>
+          <ul class="logos">
+            <li>Bancos / Open Finance</li><li>Serpro</li><li>WhatsApp</li><li>E-mail</li><li>Certificado digital</li><li>API aberta</li>
+          </ul>
+        </div>
+        <ul class="about__list reveal">
+          <li class="spot"><b>Segurança</b>Login, papéis (admin, financeiro, externo) e acesso por módulo e empresa.</li>
+          <li class="spot"><b>Compatibilidade</b>Uso via navegador em qualquer plataforma, com integrações que encaixam na operação atual.</li>
+          <li class="spot"><b>API</b>Arquitetura aberta para integrar, expandir e ligar o escritório a outros sistemas.</li>
+        </ul>
+      </div>
     </section>
 
-    <section id="contato">
-      <!-- Conteúdo de contato -->
+    <!-- PREÇOS -->
+    <section class="section" id="precos">
+      <div class="container">
+        <div class="intro intro--center reveal">
+          <p class="kicker">Planos</p>
+          <h2>Preço justo para todo escritório.</h2>
+          <div class="switch switch--sm" role="group" aria-label="Cobrança" id="billing">
+            <button type="button" class="is-active" data-billing="monthly">Mensal</button>
+            <button type="button" data-billing="annual">Anual −20%</button>
+            <span class="switch__thumb" aria-hidden="true"></span>
+          </div>
+        </div>
+        <div class="pricing">
+          <article class="price reveal">
+            <h3>Starter</h3>
+            <p class="amount"><strong data-price="297">R$297</strong><span>/mês</span></p>
+            <p class="price__d">Escritórios pequenos iniciando a automação.</p>
+            <ul class="checks checks--dark"><li>Até 20 empresas</li><li>Painel de entregas</li><li>Agenda de obrigações</li><li>1 usuário</li></ul>
+            <a class="btn btn--out" href="/teste-gratis">Começar grátis</a>
+          </article>
+          <article class="price price--pro reveal">
+            <span class="badge">Mais popular</span>
+            <h3>Profissional</h3>
+            <p class="amount"><strong data-price="697">R$697</strong><span>/mês</span></p>
+            <p class="price__d">Escritórios em crescimento com mais volume.</p>
+            <ul class="checks"><li>Até 100 empresas</li><li>6 módulos + automação NF-e</li><li>5 usuários</li><li>Suporte prioritário</li></ul>
+            <a class="btn btn--light" href="/teste-gratis">Começar grátis</a>
+          </article>
+          <article class="price reveal">
+            <h3>Enterprise</h3>
+            <p class="amount"><strong>Sob consulta</strong></p>
+            <p class="price__d">Grandes grupos e alto volume.</p>
+            <ul class="checks checks--dark"><li>Ilimitado</li><li>API + webhooks</li><li>SLA dedicado</li><li>Gerente de conta</li></ul>
+            <a class="btn btn--out" href="#contato">Falar com especialista</a>
+          </article>
+        </div>
+      </div>
     </section>
 
-    <section class="features-section" id="funcionalidades">
-  <div class="container features-container">
-
-    <div class="features-intro">
-      <p class="section-tag">A OPERAÇÃO DO ESCRITÓRIO, EM UM SÓ LUGAR</p>
-
-      <h2>
-        Menos portal.<br />
-        Mais resultado.
-      </h2>
-
-      <p class="features-description">
-        Uma plataforma completa para centralizar clientes, processos,
-        entregas, financeiro e automações fiscais e contábeis em um único
-        ambiente.
-      </p>
-    </div>
-
-    <div class="features-grid">
-
-      <article class="feature-card">
-        <div class="feature-icon" aria-hidden="true"><i class="fa-solid fa-users"></i></div>
-        <h3>Hub operacional</h3>
-        <p>
-          Carteira organizada: cadastro, certificado, responsáveis e
-          histórico num só lugar.
-        </p>
-      </article>
-
-      <article class="feature-card">
-        <div class="feature-icon" aria-hidden="true"><i class="fa-regular fa-star"></i></div>
-        <h3>Processos e entregas</h3>
-        <p>
-          Obrigações do mês em Kanban: etapas, prazos, anexos e quem cuida de
-          cada uma.
-        </p>
-      </article>
-
-      <article class="feature-card">
-        <div class="feature-icon" aria-hidden="true"><i class="fa-solid fa-display"></i></div>
-        <h3>Automações<br />fiscais/contábeis</h3>
-        <p>
-          O sistema baixa, calcula, declara e gera guia. Menos trabalho manual
-          no portal.
-        </p>
-      </article>
-
-      <article class="feature-card feature-card-highlight">
-        <div class="feature-icon" aria-hidden="true"><i class="fa-regular fa-credit-card"></i></div>
-        <h3>BPO Financeiro</h3>
-        <p>
-          Integração diretamente com o banco para conciliação e exportação
-          para contábil.
-        </p>
-      </article>
-
-    </div>
-
-  </div>
-</section>
-
-<section class="operation-section">
-  <div class="container operation-content">
-    <p>
-      Nossa solução centraliza processos, organiza etapas e automatiza
-      atividades, proporcionando uma visão completa da operação e permitindo
-      que sua equipe trabalhe com mais produtividade, controle e previsibilidade.
-    </p>
-  </div>
-
-  <div class="container">
-    <div class="operation-divider">
-      <span></span>
-    </div>
-
-    <div class="operation-benefits">
-      <article class="operation-card">
-        <div class="operation-icon-wrap">
-          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"></path></svg>
-        </div>
-
-        <h3>Processos Padronizados</h3>
-
-        <p>
-          Organize a operação com fluxos estruturados e modelos reutilizáveis.
-        </p>
-      </article>
-
-      <article class="operation-card">
-        <div class="operation-icon-wrap">
-          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2"><circle cx="12" cy="12" r="3"></circle><path d="M12 1v4M12 19v4M4.22 4.22l2.83 2.83M16.95 16.95l2.83 2.83M1 12h4M19 12h4M4.22 19.78l2.83-2.83M16.95 7.05l2.83-2.83"></path></svg>
-        </div>
-
-        <h3>Automação de Etapas</h3>
-
-        <p>
-          Automatize tarefas, prazos e notificações e reduza atividades manuais.
-        </p>
-      </article>
-
-      <article class="operation-card">
-        <div class="operation-icon-wrap">
-          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><path d="M12 8v4M12 16h.01"></path></svg>
-        </div>
-
-        <h3>Visão da Operação</h3>
-
-        <p>
-          Acompanhe processos, responsáveis, pendências e entregas em tempo real.
-        </p>
-      </article>
-    </div>
-  </div>
-</section>
-
-<section class="modules-section" id="modulos">
-  <div class="container">
-
-    <div class="modules-header">
-      <p class="section-tag">6 MÓDULOS INTEGRADOS</p>
-
-      <h2>
-        Tudo que seu escritório precisa,<br />
-        em um só lugar
-      </h2>
-
-      <p>
-        Desenvolvido para a realidade dos escritórios contábeis<br />
-        brasileiros.
-      </p>
-    </div>
-
-    <div class="modules-content">
-
-      <nav class="modules-menu" aria-label="Módulos da plataforma">
-        <button class="module-item active" type="button">
-          <span>01</span>
-          Gestão de Clientes
-        </button>
-
-        <button class="module-item" type="button">
-          <span>02</span>
-          Processos e Entregas
-        </button>
-
-        <button class="module-item" type="button">
-          <span>03</span>
-          Automação Fiscal e Contábil
-        </button>
-
-        <button class="module-item" type="button">
-          <span>04</span>
-          Gerenciador de Documentos
-        </button>
-
-        <button class="module-item" type="button">
-          <span>05</span>
-          Auditoria por XML e Cartões
-        </button>
-
-        <button class="module-item" type="button">
-          <span>06</span>
-          Financeiro e Conciliação
-        </button>
-      </nav>
-
-      <article class="module-details">
-        <p class="module-number">MÓDULO 01</p>
-
-        <h3>Gestão de Clientes</h3>
-
-        <p class="module-description">
-          A empresa vira o hub do escritório: cadastro, certificado, tags,
-          histórico e responsáveis por área — fiscal, contábil e pessoal —
-          sem atrito na equipe.
-        </p>
-
-        <ul class="module-benefits">
-          <li>Ficha operacional completa com CNPJ, CNAE e regime</li>
-          <li>Responsáveis certos por área sem conflito</li>
-          <li>Certificados .pfx e .p12 centralizados</li>
-          <li>Acesso externo: cliente acompanha sem ligar</li>
-        </ul>
-      </article>
-
-    </div>
-  </div>
-</section>
-
-<section class="kanban-section" id="como-funciona">
-  <div class="container kanban-container">
-
-    <div class="kanban-image">
-      <img
-        src="images/painel-kanban.png"
-        alt="Painel de processos em Kanban"
-      />
-    </div>
-
-    <div class="kanban-content">
-      <p class="section-tag">PROCESSOS E ENTREGAS</p>
-
-      <h2>
-        Veja e mova as etapas<br />
-        em Kanban.
-      </h2>
-
-      <ul class="kanban-benefits">
-
-        <li>
-          <span class="benefit-label">Comentários</span>
-          <p>
-            Tudo no card: conversa, alerta, anexo com avisos diretamente para
-            o WhatsApp.
-          </p>
-        </li>
-
-        <li>
-         <span class="benefit-label">Rastreamento</span>
-          <p>
-            Quem fez, quando fez, o que mudou. Histórico completo.
-          </p>
-        </li>
-
-        <li>
-          <span class="benefit-label">Centralização</span>
-          <p>
-            Status, responsável, documentos e comentários no mesmo lugar.
-          </p>
-        </li>
-
-      </ul>
-    </div>
-
-  </div>
-</section>
-
-<section class="fiscal-section">
-  <div class="container fiscal-container">
-
-    <div class="fiscal-content">
-      <p class="section-tag">MÓDULO FISCAL</p>
-
-      <h2>
-        Regras fiscais<br />
-        unificadas
-      </h2>
-
-      <h3 style="
-       color: #8f1fcf;
-       ">Fiscal, contábil e financeiro juntos</h3>
-
-
-
-      <p class="fiscal-description">
-        Parametrize as regras fiscais uma vez e use a mesma base para gerar
-        balancete e obrigações acessórias, cruzando os dados do financeiro.
-        Menos retrabalho, mais consistência no fechamento.
-      </p>
-    </div>
-
-    <div class="fiscal-cards">
-
-      <div class="fiscal-top-cards">
-        <article class="fiscal-card fiscal-card-purple">
-          <h3>1 base</h3>
-          <p>Regras fiscais<br />parametrizadas</p>
-        </article>
-
-        <article class="fiscal-card fiscal-card-dark">
-          <h3>Balancete</h3>
-          <p>Fiscal e financeiro no<br />mesmo fechamento</p>
-        </article>
-      </div>
-
-      <article class="tax-catalog">
-        <div class="catalog-title">
-          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#8f1fcf" stroke-width="2"><path d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2"></path></svg>
-          <h3>Catálogo de Impostos</h3>
-        </div>
-
-        <div class="tax-tags">
-          <span>COFINS</span>
-          <span>PIS</span>
-          <span>ICMS</span>
-          <span>ICMS-ST</span>
-          <span>DIFAL</span>
-          <span>IRRF</span>
-          <span>CSLL</span>
-        </div>
-      </article>
-
-    </div>
-  </div>
-</section>
-
-<section class="platform-section">
-  <div class="container platform-container">
-
-    <div class="platform-content">
-      <p class="section-tag">A PLATAFORMA EM AÇÃO</p>
-
-      <h2>
-        Controle total da operação<br />
-        contábil.
-      </h2>
-
-      <p class="platform-description">
-        Entregas, documentos e financeiro em um único painel.
-      </p>
-
-      <div class="platform-tabs">
-        <button class="platform-tab active" type="button">Entregas</button>
-        <button class="platform-tab" type="button">Documentos</button>
-        <button class="platform-tab" type="button">Financeiro</button>
-      </div>
-    </div>
-
-    <div class="deliveries-panel">
-      <div class="panel-header">
-        <h3>Entregas — Set/2026</h3>
-        <span>96% concluído</span>
-      </div>
-
-      <div class="panel-stats">
-        <div>
-          <strong>347</strong>
-          <span>Total</span>
-        </div>
-
-        <div>
-          <strong class="pending">12</strong>
-          <span>Pendentes</span>
-        </div>
-
-        <div>
-          <strong class="delivered">310</strong>
-          <span>Entregues</span>
-        </div>
-
-        <div>
-          <strong class="late">3</strong>
-          <span>Atrasadas</span>
-        </div>
-      </div>
-
-      <div class="delivery-list">
-
-        <article class="delivery-item">
+    <!-- CTA -->
+    <section class="section section--cta" id="contato">
+      <div class="container">
+        <div class="cta reveal">
           <div>
-            <h4>SPED Fiscal</h4>
-            <p>Tech Soluções Ltda</p>
+            <h2>Pronto para transformar a rotina do escritório?</h2>
+            <p>14 dias grátis · sem cartão · dados no Brasil · LGPD</p>
           </div>
-          <span class="status delivered-status">Entregue</span>
-        </article>
-
-        <article class="delivery-item">
-          <div>
-            <h4>DAS Mensal</h4>
-            <p>Comércio Norte ME</p>
-          </div>
-          <span class="status deadline-status">No Prazo</span>
-        </article>
-
-        <article class="delivery-item">
-          <div>
-            <h4>EFD Contribuições</h4>
-            <p>Ind. Beltrano S/A</p>
-          </div>
-          <span class="status early-status">Em Antecipação</span>
-        </article>
-
-        <article class="delivery-item">
-          <div>
-            <h4>DCTF Web</h4>
-            <p>Serviços Alpha Ltda</p>
-          </div>
-          <span class="status pending-status">Pendente</span>
-        </article>
-
-        <article class="delivery-item">
-          <div>
-            <h4>PGDAS-D</h4>
-            <p>Distribuidora Beta</p>
-          </div>
-          <span class="status late-status">Atrasada</span>
-        </article>
-
-      </div>
-    </div>
-
-  </div>
-</section>
-
-<section class="automation-section">
-  <div class="container automation-container">
-
-    <div class="automation-title">
-      <h2>
-        Tudo sem<br />
-        intervenção<br />
-        humana.
-      </h2>
-    </div>
-
-    <ol class="automation-steps">
-      <li>
-        <span class="step-number">01</span>
-        <p>Captura as notas do período</p>
-      </li>
-
-      <li>
-        <span class="step-number">02</span>
-        <p>Calcula, declara e gera a DAS automaticamente</p>
-      </li>
-
-      <li>
-        <span class="step-number">03</span>
-        <p>Obrigações acessórias no mesmo fluxo, com rastreio</p>
-      </li>
-    </ol>
-
-  </div>
-</section>
-
-<section class="steps-section" id="como-funciona">
-  <div class="container">
-
-    <div class="steps-header">
-      <p class="section-tag">COMO FUNCIONA</p>
-
-      <h2>
-        Do cadastro à entrega<br />
-        em 4 passos
-      </h2>
-    </div>
-
-    <div class="steps-list">
-
-      <article class="step-card">
-        <div class="step-top">
-          <span class="step-badge">1</span>
-          <span class="step-line"></span>
-        </div>
-
-        <h3>Cadastre suas empresas</h3>
-
-        <p>
-          Importe a carteira de clientes com CNPJ, regime tributário, CNAE e
-          estrutura de matrizes e filiais.
-        </p>
-      </article>
-
-      <article class="step-card">
-        <div class="step-top">
-          <span class="step-badge">2</span>
-          <span class="step-line"></span>
-        </div>
-
-        <h3>Configure as obrigações</h3>
-
-        <p>
-          Defina a agenda fiscal de cada cliente — SPED, DAS, DCTF, 13º
-          Salário, DIEF — com frequência e regras.
-        </p>
-      </article>
-
-      <article class="step-card">
-        <div class="step-top">
-          <span class="step-badge">3</span>
-          <span class="step-line"></span>
-        </div>
-
-        <h3>Automatize e monitore</h3>
-
-        <p>
-          Robôs capturam NF-e e NFS-e via certificado digital. Painel de
-          entregas mostra o status em tempo real.
-        </p>
-      </article>
-
-      <article class="step-card">
-        <div class="step-top">
-          <span class="step-badge">4</span>
-        </div>
-
-        <h3>Entregue com confiança</h3>
-
-        <p>
-          Comprovantes organizados automaticamente. Relatórios prontos para
-          apresentar ao cliente com um clique.
-        </p>
-      </article>
-
-    </div>
-  </div>
-</section>
-
-<section class="notifications-section">
-  <div class="container">
-
-    <div class="notifications-box">
-
-      <div class="notifications-title">
-        <h2>
-          Notificações que<br />
-          chegam no<br />
-          cliente
-          <span>Automaticamente.</span>
-        </h2>
-      </div>
-
-      <div class="notifications-content">
-        <h3>WhatsApp, e-mail e sistema</h3>
-
-        <p>
-          Avisa prazo, entrega e cobrança no canal certo, sem a equipe ficar
-          cobrando no manual.
-        </p>
-
-        <div class="notification-types">
-          <span>E-mail</span>
-          <span>WhatsApp</span>
-          <span>Sistema</span>
-          <span>Alertas</span>
-        </div>
-
-        <div class="communication-channels">
-          <strong>Canais de comunicação:</strong>
-
-          <div class="channel-icons">
-            <a href="#" class="whatsapp-icon" aria-label="WhatsApp">◉</a>
-            <a href="#" class="email-icon" aria-label="E-mail">✉</a>
+          <div class="cta__actions">
+            <a class="btn btn--light btn--lg" href="/teste-gratis">Começar gratuitamente</a>
+            <a class="btn btn--line btn--lg" href="/demonstracao">Agendar demonstração</a>
+            <a class="btn btn--line btn--lg" href="https://wa.me/5563993124723" target="_blank" rel="noopener">WhatsApp (63) 9-9312-4723</a>
           </div>
         </div>
       </div>
-
-    </div>
-  </div>
-</section>
-
-<section class="testimonials-section" aria-labelledby="testimonials-title" hidden>
-  <div class="container testimonials-container">
-    <div class="testimonials-heading">
-      <p class="section-tag">DEPOIMENTOS</p>
-      <h2 id="testimonials-title">Quem usa, recomenda</h2>
-    </div>
-
-    <div class="testimonials-grid">
-      <article class="testimonial-card">
-        <div class="testimonial-rating" aria-label="5 de 5 estrelas">★★★★★</div>
-        <blockquote>“Reduzimos o tempo gasto com obrigações em 70%. O painel de entregas mudou completamente a forma como a equipe trabalha.”</blockquote>
-        <footer class="testimonial-person">
-          <span class="testimonial-avatar">FL</span>
-          <div><strong>Fernanda Lima</strong><span>Sócia-diretora, Lima &amp; Associados</span></div>
-        </footer>
-      </article>
-
-      <article class="testimonial-card" hidden>
-        <div class="testimonial-rating" aria-label="5 de 5 estrelas">★★★★★</div>
-        <blockquote>“A automação de NF-e via certificado digital foi um divisor de águas. Hoje o sistema faz tudo sozinho a cada 60 minutos.”</blockquote>
-        <footer class="testimonial-person">
-          <span class="testimonial-avatar">RS</span>
-          <div><strong>Rafael Souza</strong><span>Contador, Souza Contabilidade</span></div>
-        </footer>
-      </article>
-
-      <article class="testimonial-card">
-        <div class="testimonial-rating" aria-label="5 de 5 estrelas">★★★★★</div>
-        <blockquote>“Gerencio mais de 200 CNPJs e nunca perco um prazo. Os alertas automáticos me deram uma tranquilidade que não tinha há anos.”</blockquote>
-        <footer class="testimonial-person">
-          <span class="testimonial-avatar">CM</span>
-          <div><strong>Cláudia Mendes</strong><span>Gerente Fiscal, Grupo Mendes</span></div>
-        </footer>
-      </article>
-    </div>
-  </div>
-</section>
-
-<section class="obligations-section">
-  <div class="container">
-
-    <div class="obligations-header">
-      <p class="section-tag">AGENDA DE OBRIGAÇÕES</p>
-
-      <h2>
-        Todas as obrigações<br />
-        configuradas e monitoradas
-      </h2>
-    </div>
-
-    <div class="obligations-grid">
-
-      <article class="obligation-card">
-        <div class="obligation-top">
-          <span class="tag tag-fiscal">FISCAL</span>
-          <span>Mensal</span>
-        </div>
-        <h3>DIEF</h3>
-        <p>Declaração de Informações Econômico-Fiscais</p>
-      </article>
-
-      <article class="obligation-card">
-        <div class="obligation-top">
-          <span class="tag tag-personal">PESSOAL</span>
-          <span>Anual</span>
-        </div>
-        <h3>13º Salário — 1ª Parcela</h3>
-        <p>Pagamento em novembro</p>
-      </article>
-
-      <article class="obligation-card">
-        <div class="obligation-top">
-          <span class="tag tag-personal">PESSOAL</span>
-          <span>Anual</span>
-        </div>
-        <h3>13º Salário — Integral</h3>
-        <p>Pagamento em dezembro</p>
-      </article>
-
-      <article class="obligation-card">
-        <div class="obligation-top">
-          <span class="tag tag-personal">PESSOAL</span>
-          <span>Mensal</span>
-        </div>
-        <h3>Adiantamento de Salário</h3>
-        <p>Quinzenal ou mensal</p>
-      </article>
-
-      <article class="obligation-card">
-        <div class="obligation-top">
-          <span class="tag tag-fiscal">FISCAL</span>
-          <span>Mensal</span>
-        </div>
-        <h3>SPED Fiscal</h3>
-        <p>Escrituração fiscal digital</p>
-      </article>
-
-      <article class="obligation-card">
-        <div class="obligation-top">
-          <span class="tag tag-fiscal">FISCAL</span>
-          <span>Mensal</span>
-        </div>
-        <h3>EFD Contribuições</h3>
-        <p>PIS/COFINS e contribuições</p>
-      </article>
-
-      <article class="obligation-card">
-        <div class="obligation-top">
-          <span class="tag tag-fiscal">FISCAL</span>
-          <span>Mensal</span>
-        </div>
-        <h3>PGDAS-D</h3>
-        <p>Simples Nacional — apuração mensal</p>
-      </article>
-
-      <article class="obligation-card">
-        <div class="obligation-top">
-          <span class="tag tag-fiscal">FISCAL</span>
-          <span>Mensal</span>
-        </div>
-        <h3>DAS Mensal</h3>
-        <p>Documento de arrecadação Simples</p>
-      </article>
-
-      <article class="obligation-card">
-        <div class="obligation-top">
-          <span class="tag tag-fiscal">FISCAL</span>
-          <span>Mensal</span>
-        </div>
-        <h3>DCTF Web</h3>
-        <p>Declaração de débitos e créditos</p>
-      </article>
-
-    </div>
-  </div>
-</section>
-
-<section class="testimonials-section">
-  <div class="container">
-
-    <div class="testimonials-header">
-      <p class="section-tag">DEPOIMENTOS</p>
-      <h2>Quem usa, recomenda</h2>
-    </div>
-
-    <div class="testimonials-grid">
-
-      <article class="testimonial-card">
-        <div class="stars" aria-label="5 estrelas">★★★★★</div>
-
-        <blockquote>
-          “Reduzimos o tempo gasto com obrigações em 70%. O painel de entregas
-          mudou completamente a forma como a equipe trabalha.”
-        </blockquote>
-
-        <footer class="testimonial-author">
-          <span class="author-avatar">FL</span>
-
-          <div>
-            <strong>Fernanda Lima</strong>
-            <p>Sócia-diretora, Lima &amp; Associados</p>
-          </div>
-        </footer>
-      </article>
-
-      <article class="testimonial-card">
-        <div class="stars" aria-label="5 estrelas">★★★★★</div>
-
-        <blockquote>
-          “A automação de NF-e via certificado digital foi um divisor de águas.
-          Hoje o sistema faz tudo sozinho a cada 60 minutos.”
-        </blockquote>
-
-        <footer class="testimonial-author">
-          <span class="author-avatar">RS</span>
-
-          <div>
-            <strong>Rafael Souza</strong>
-            <p>Contador, Souza Contabilidade</p>
-          </div>
-        </footer>
-      </article>
-
-      <article class="testimonial-card">
-        <div class="stars" aria-label="5 estrelas">★★★★★</div>
-
-        <blockquote>
-          “Gerencio mais de 200 CNPJs e nunca perco um prazo. Os alertas
-          automáticos me deram uma tranquilidade que não tinha há anos.”
-        </blockquote>
-
-        <footer class="testimonial-author">
-          <span class="author-avatar">CM</span>
-
-          <div>
-            <strong>Cláudia Mendes</strong>
-            <p>Gerente Fiscal, Grupo Mendes</p>
-          </div>
-        </footer>
-      </article>
-
-    </div>
-  </div>
-</section>
-
-<section class="about-section" id="sobre">
-  <div class="container about-container">
-
-    <div class="about-content">
-      <h2>Impostograma</h2>
-
-      <p>
-        Uma plataforma criada para centralizar e simplificar a operação do
-        escritório contábil. Clientes, obrigações, documentos, tarefas,
-        automações fiscais e financeiro ficam organizados em um único ambiente,
-        dando à equipe uma visão clara do que precisa ser feito, quem é
-        responsável e o que depende do cliente.
-      </p>
-
-      <p>
-        Com segurança, integrações e arquitetura em API, a plataforma se conecta
-        às ferramentas que o escritório já utiliza. Bancos, Serpro, WhatsApp,
-        e-mail e outros sistemas fazem parte do mesmo fluxo, reduzindo
-        retrabalho e eliminando informações espalhadas.
-      </p>
-    </div>
-
-    <div class="about-accordions">
-
-      <article class="about-card">
-        <header class="about-card-header">
-          <span class="about-icon">♢</span>
-          <h3>Segurança</h3>
-        </header>
-
-        <div class="about-card-content">
-          <p>
-            Login, papéis (admin, financeiro, externo) e acesso por módulo e
-            empresa.
-          </p>
-        </div>
-      </article>
-
-      <article class="about-card">
-        <header class="about-card-header">
-          <span class="about-icon">◎</span>
-          <h3>Compatibilidade</h3>
-        </header>
-
-        <div class="about-card-content">
-          <p>
-            Uso via navegador em qualquer plataforma, com integrações que
-            encaixam na operação atual.
-          </p>
-        </div>
-      </article>
-
-      <article class="about-card">
-        <header class="about-card-header">
-          <span class="about-icon">&lt;/&gt;</span>
-          <h3>API</h3>
-        </header>
-
-        <div class="about-card-content">
-          <p>
-            Arquitetura aberta para integrar, expandir e ligar o escritório a
-            outros sistemas.
-          </p>
-        </div>
-      </article>
-
-    </div>
-  </div>
-</section>
-
-<section class="pricing-section" id="precos">
-  <div class="container">
-
-    <div class="pricing-header">
-      <div>
-        <p class="section-tag">PLANOS</p>
-
-        <h2>
-          Preço justo para<br />
-          todo escritório
-        </h2>
-      </div>
-
-      <div class="billing-toggle" aria-label="Escolha a forma de cobrança">
-        <button class="billing-option active" type="button">Mensal</button>
-        <button class="billing-option" type="button">
-          Anual <span>−20%</span>
-        </button>
-      </div>
-    </div>
-
-    <div class="pricing-grid">
-
-      <article class="pricing-card">
-        <p class="plan-name">STARTER</p>
-
-        <p class="price">
-          <strong>R$297</strong>
-          <span>/mês</span>
-        </p>
-
-        <p class="plan-description">
-          Para escritórios pequenos iniciando a automação
-        </p>
-
-        <ul class="plan-features">
-          <li>Até 20 empresas ativas</li>
-          <li>Painel de Entregas</li>
-          <li>Agenda de obrigações</li>
-          <li>Gestão documental básica</li>
-          <li>1 usuário</li>
-        </ul>
-
-        <a href="/teste-gratis" class="plan-button">
-          Começar grátis
-        </a>
-      </article>
-
-      <article class="pricing-card pricing-card-featured">
-        <span class="popular-badge">MAIS POPULAR</span>
-
-        <p class="plan-name">PROFISSIONAL</p>
-
-        <p class="price">
-          <strong>R$697</strong>
-          <span>/mês</span>
-        </p>
-
-        <p class="plan-description">
-          Para escritórios em crescimento com mais volume
-        </p>
-
-        <ul class="plan-features">
-          <li>Até 100 empresas ativas</li>
-          <li>Todos os 6 módulos</li>
-          <li>Automação NF-e/NFS-e</li>
-          <li>Processos Molde ilimitados</li>
-          <li>Visão do cliente</li>
-          <li>5 usuários</li>
-          <li>Suporte prioritário</li>
-        </ul>
-
-        <a href="/teste-gratis" class="plan-button">
-          Começar grátis
-        </a>
-      </article>
-
-      <article class="pricing-card">
-        <p class="plan-name">ENTERPRISE</p>
-
-        <p class="price price-custom">
-          <strong>Sob consulta</strong>
-        </p>
-
-        <p class="plan-description">
-          Para grandes grupos com alto volume de clientes
-        </p>
-
-        <ul class="plan-features">
-          <li>Empresas ilimitadas</li>
-          <li>Usuários ilimitados</li>
-          <li>Robôs de classificação IA</li>
-          <li>API completa + webhooks</li>
-          <li>SLA 99,9% dedicado</li>
-          <li>Gerente de conta exclusivo</li>
-        </ul>
-
-        <a href="#contato" class="plan-button">
-          Falar com especialista
-        </a>
-      </article>
-
-    </div>
-  </div>
-</section>
-
-<section class="cta-section" id="contato">
-  <div class="container cta-content">
-
-    <h2>
-      Pronto para transformar<br />
-      seu escritório?
-    </h2>
-
-    <p class="cta-description">
-      14 dias grátis, sem cartão de crédito. Configure em menos de 10 minutos.
-    </p>
-
-    <div class="cta-buttons">
-      <a href="/teste-gratis" class="button button-light">
-        Começar gratuitamente
-      </a>
-
-      <a href="/demonstracao" class="button button-outline-light">
-        Agendar demonstração
-      </a>
-    </div>
-
-    <p class="cta-note">
-      Sem compromisso · Cancele quando quiser · Dados 100% no Brasil · LGPD compliant
-    </p>
-
-  </div>
-</section>
-
-<footer class="footer">
-  <div class="container">
-
-    <div class="footer-content">
-
-      <div class="footer-brand">
-        <a href="/" class="footer-logo" aria-label="Impostograma - Página inicial">
-          <img src="images/logo-impostograma-violet.svg" alt="Impostograma" />
-        </a>
-
-        <p>
-          Automação fiscal<br />
-          inteligente para escritórios<br />
-          contábeis brasileiros.
-        </p>
-      </div>
-
-      <div class="footer-column">
-        <h3>Plataforma</h3>
-
-        <ul>
-          <li><a href="#modulos">Gestão de Empresas</a></li>
-          <li><a href="#como-funciona">Painel de Entregas</a></li>
-          <li><a href="#funcionalidades">Automação NF-e/NFS-e</a></li>
-          <li><a href="#documentos">Documentos</a></li>
-          <li><a href="#financeiro">Financeiro</a></li>
-          <li><a href="#certificados">Certificados Digitais</a></li>
-        </ul>
-      </div>
-
-      <div class="footer-column">
-        <h3>Empresa</h3>
-
-        <ul>
-          <li><a href="#sobre">Sobre nós</a></li>
-          <li><a href="/blog">Blog</a></li>
-          <li><a href="/carreiras">Carreiras</a></li>
-          <li><a href="/imprensa">Imprensa</a></li>
-          <li><a href="#contato">Contato</a></li>
-        </ul>
-      </div>
-
-      <div class="footer-column">
-        <h3>Suporte</h3>
-
-        <ul>
-          <li><a href="/documentacao">Documentação</a></li>
-          <li><a href="/ajuda">Central de Ajuda</a></li>
-          <li><a href="/status">Status do sistema</a></li>
-          <li><a href="/api">API Docs</a></li>
-        </ul>
-      </div>
-
-      <div class="footer-column">
-        <h3>Legal</h3>
-
-        <ul>
-          <li><a href="/termos">Termos de uso</a></li>
-          <li><a href="/privacidade">Privacidade</a></li>
-          <li><a href="/lgpd">LGPD</a></li>
-          <li><a href="/cookies">Cookies</a></li>
-        </ul>
-      </div>
-
-    </div>
-
-    <div class="footer-bottom">
-      <p>© 2026 Impostograma. Todos os direitos reservados.</p>
-
-      <p class="footer-security">
-        ♢ Hospedagem no Brasil · Conforme LGPD
-      </p>
-    </div>
-
-  </div>
-</footer>
-
+    </section>
   </main>
 
   <footer class="footer">
-    <p>© 2026 Impostograma. Todos os direitos reservados.</p>
+    <div class="container footer__row">
+      <div><img src="images/logo-on-dark.png" alt="Impostograma" width="140" height="34" /><p>Gestão e automação para escritórios contábeis.</p></div>
+      <p>© 2026 Impostograma · www.impostograma.com · (63) 9-9312-4723</p>
+    </div>
   </footer>
 </body>
 </html>

@@ -1,0 +1,450 @@
+{
+  "source": "https://playercontabilidade.github.io/impostograma_site/",
+  "repo": "https://github.com/playercontabilidade/impostograma_site",
+  "capturedAt": "2026-09-17",
+  "meta": {
+    "title": "Impostograma | Automação fiscal",
+    "description": "Automação fiscal para escritórios contábeis.",
+    "lang": "pt-BR",
+    "fonts": ["Inter"],
+    "icons": ["Font Awesome 6.5.2"],
+    "stack": ["HTML estático", "style.css", "script.js"],
+    "brandColors": {
+      "ink": "#17162b",
+      "muted": "#66647a",
+      "violet": "#6c3cf0",
+      "violetDark": "#402184",
+      "lavender": "#f1ecff",
+      "line": "#ded9ed",
+      "mint": "#baf5d6",
+      "white": "#fff"
+    }
+  },
+  "links": {
+    "instagram": "https://www.instagram.com/impostograma",
+    "login": "https://impostograma.com/",
+    "trial": "/teste-gratis",
+    "demo": "/demonstracao"
+  },
+  "nav": [
+    { "label": "Sobre nós", "href": "#sobre" },
+    { "label": "Funcionalidades", "href": "#funcionalidades" },
+    { "label": "Como funciona", "href": "#como-funciona" },
+    { "label": "Módulos", "href": "#modulos" },
+    { "label": "Preços", "href": "#precos" },
+    { "label": "Contato", "href": "#contato" }
+  ],
+  "hero": {
+    "headline": "Automação fiscal que transforma escritórios contábeis.",
+    "subheadline": "Gerencie obrigações, documentos e clientes em uma plataforma integrada — do cadastro à entrega.",
+    "ctas": [
+      { "label": "Começar grátis", "href": "/teste-gratis" },
+      { "label": "Ver demonstração", "href": "#demonstracao" }
+    ],
+    "metrics": [
+      { "value": "+40%", "label": "Produtividade" },
+      { "value": "−70%", "label": "Retrabalho e erros operacionais" }
+    ],
+    "image": "images/alt_image.png"
+  },
+  "ticker": [
+    "NF-e / NFS-e",
+    "IRPJ",
+    "CSLL",
+    "PIS/COFINS",
+    "Adiantamento de salário",
+    "SPED Fiscal",
+    "EFD Contribuições",
+    "DCTF Web",
+    "PGDAS-D",
+    "DAS Mensal",
+    "DIEF",
+    "13º Salário",
+    "eSocial"
+  ],
+  "features": {
+    "tag": "A OPERAÇÃO DO ESCRITÓRIO, EM UM SÓ LUGAR",
+    "headline": "Menos portal. Mais resultado.",
+    "description": "Uma plataforma completa para centralizar clientes, processos, entregas, financeiro e automações fiscais e contábeis em um único ambiente.",
+    "cards": [
+      {
+        "title": "Hub operacional",
+        "text": "Carteira organizada: cadastro, certificado, responsáveis e histórico num só lugar."
+      },
+      {
+        "title": "Processos e entregas",
+        "text": "Obrigações do mês em Kanban: etapas, prazos, anexos e quem cuida de cada uma."
+      },
+      {
+        "title": "Automações fiscais/contábeis",
+        "text": "O sistema baixa, calcula, declara e gera guia. Menos trabalho manual no portal."
+      },
+      {
+        "title": "BPO Financeiro",
+        "text": "Integração diretamente com o banco para conciliação e exportação para contábil.",
+        "highlight": true
+      }
+    ]
+  },
+  "operation": {
+    "intro": "Nossa solução centraliza processos, organiza etapas e automatiza atividades, proporcionando uma visão completa da operação e permitindo que sua equipe trabalhe com mais produtividade, controle e previsibilidade.",
+    "benefits": [
+      {
+        "title": "Processos Padronizados",
+        "text": "Organize a operação com fluxos estruturados e modelos reutilizáveis."
+      },
+      {
+        "title": "Automação de Etapas",
+        "text": "Automatize tarefas, prazos e notificações e reduza atividades manuais."
+      },
+      {
+        "title": "Visão da Operação",
+        "text": "Acompanhe processos, responsáveis, pendências e entregas em tempo real."
+      }
+    ]
+  },
+  "modules": {
+    "tag": "6 MÓDULOS INTEGRADOS",
+    "headline": "Tudo que seu escritório precisa, em um só lugar",
+    "description": "Desenvolvido para a realidade dos escritórios contábeis brasileiros.",
+    "items": [
+      {
+        "id": 1,
+        "title": "Gestão de Clientes",
+        "description": "A empresa vira o hub do escritório: cadastro, certificado, tags, histórico e responsáveis por área — fiscal, contábil e pessoal — sem atrito na equipe.",
+        "benefits": [
+          "Ficha operacional completa com CNPJ, CNAE e regime",
+          "Responsáveis certos por área sem conflito",
+          "Certificados .pfx e .p12 centralizados",
+          "Acesso externo: cliente acompanha sem ligar"
+        ]
+      },
+      {
+        "id": 2,
+        "title": "Processos e Entregas",
+        "description": "Organize toda a rotina em processos visuais, com responsáveis, prazos, documentos e um histórico completo de cada entrega.",
+        "benefits": [
+          "Kanban por competência e responsável",
+          "Prazos e alertas sempre visíveis",
+          "Anexos e comentários no mesmo card",
+          "Rastreabilidade de cada alteração"
+        ]
+      },
+      {
+        "id": 3,
+        "title": "Automação Fiscal e Contábil",
+        "description": "Tarefas repetitivas acontecem no fluxo certo: captura, cálculo, declaração e geração de guias com controle da operação.",
+        "benefits": [
+          "Captura automática de documentos fiscais",
+          "Regras parametrizadas por cliente",
+          "Guias e declarações no mesmo fluxo",
+          "Menos retrabalho operacional"
+        ]
+      },
+      {
+        "id": 4,
+        "title": "Gerenciador de Documentos",
+        "description": "Documentos, comprovantes e certificados ficam centralizados, organizados e disponíveis para a equipe e o cliente.",
+        "benefits": [
+          "Pastas por empresa e competência",
+          "Controle de documentos pendentes",
+          "Comprovantes associados à entrega",
+          "Acesso seguro para clientes"
+        ]
+      },
+      {
+        "id": 5,
+        "title": "Auditoria por XML e Cartões",
+        "description": "Cruze dados e identifique divergências antes do fechamento, com uma visão prática das informações que precisam de atenção.",
+        "benefits": [
+          "Leitura estruturada de XMLs",
+          "Conferência de cartões e recebíveis",
+          "Alertas de inconsistências",
+          "Base confiável para conferência"
+        ]
+      },
+      {
+        "id": 6,
+        "title": "Financeiro e Conciliação",
+        "description": "Conecte a rotina financeira ao escritório, acompanhando recebimentos, conciliação e dados prontos para a contabilidade.",
+        "benefits": [
+          "Conciliação bancária integrada",
+          "Visão de contas e recebimentos",
+          "Exportação para a contabilidade",
+          "Financeiro conectado ao fechamento"
+        ]
+      }
+    ]
+  },
+  "kanban": {
+    "tag": "PROCESSOS E ENTREGAS",
+    "headline": "Veja e mova as etapas em Kanban.",
+    "image": "images/painel-kanban.png",
+    "benefits": [
+      {
+        "label": "Comentários",
+        "text": "Tudo no card: conversa, alerta, anexo com avisos diretamente para o WhatsApp."
+      },
+      {
+        "label": "Rastreamento",
+        "text": "Quem fez, quando fez, o que mudou. Histórico completo."
+      },
+      {
+        "label": "Centralização",
+        "text": "Status, responsável, documentos e comentários no mesmo lugar."
+      }
+    ]
+  },
+  "fiscal": {
+    "tag": "MÓDULO FISCAL",
+    "headline": "Regras fiscais unificadas",
+    "subheadline": "Fiscal, contábil e financeiro juntos",
+    "description": "Parametrize as regras fiscais uma vez e use a mesma base para gerar balancete e obrigações acessórias, cruzando os dados do financeiro. Menos retrabalho, mais consistência no fechamento.",
+    "cards": [
+      { "title": "1 base", "text": "Regras fiscais parametrizadas" },
+      { "title": "Balancete", "text": "Fiscal e financeiro no mesmo fechamento" }
+    ],
+    "taxCatalog": ["COFINS", "PIS", "ICMS", "ICMS-ST", "DIFAL", "IRRF", "CSLL"]
+  },
+  "platformDemo": {
+    "tag": "A PLATAFORMA EM AÇÃO",
+    "headline": "Controle total da operação contábil.",
+    "description": "Entregas, documentos e financeiro em um único painel.",
+    "tabs": {
+      "Entregas": {
+        "title": "Entregas — Set/2026",
+        "progress": "96% concluído",
+        "stats": [
+          ["347", "Total"],
+          ["12", "Pendentes"],
+          ["310", "Entregues"],
+          ["3", "Atrasadas"]
+        ],
+        "items": [
+          { "name": "SPED Fiscal", "company": "Tech Soluções Ltda", "status": "Entregue" },
+          { "name": "DAS Mensal", "company": "Comércio Norte ME", "status": "No Prazo" },
+          { "name": "EFD Contribuições", "company": "Ind. Beltrano S/A", "status": "Em Antecipação" },
+          { "name": "DCTF Web", "company": "Serviços Alpha Ltda", "status": "Pendente" },
+          { "name": "PGDAS-D", "company": "Distribuidora Beta", "status": "Atrasada" }
+        ]
+      },
+      "Documentos": {
+        "title": "Documentos — Set/2026",
+        "progress": "91% organizados",
+        "stats": [
+          ["1.284", "Total"],
+          ["42", "Pendentes"],
+          ["1.167", "Organizados"],
+          ["8", "Vencidos"]
+        ]
+      },
+      "Financeiro": {
+        "title": "Financeiro — Set/2026",
+        "progress": "94% conciliado",
+        "stats": [
+          ["238", "Lançamentos"],
+          ["9", "Pendentes"],
+          ["224", "Conciliados"],
+          ["5", "Alertas"]
+        ]
+      }
+    }
+  },
+  "automation": {
+    "headline": "Tudo sem intervenção humana.",
+    "steps": [
+      "Captura as notas do período",
+      "Calcula, declara e gera a DAS automaticamente",
+      "Obrigações acessórias no mesmo fluxo, com rastreio"
+    ]
+  },
+  "howItWorks": {
+    "tag": "COMO FUNCIONA",
+    "headline": "Do cadastro à entrega em 4 passos",
+    "steps": [
+      {
+        "n": 1,
+        "title": "Cadastre suas empresas",
+        "text": "Importe a carteira de clientes com CNPJ, regime tributário, CNAE e estrutura de matrizes e filiais."
+      },
+      {
+        "n": 2,
+        "title": "Configure as obrigações",
+        "text": "Defina a agenda fiscal de cada cliente — SPED, DAS, DCTF, 13º Salário, DIEF — com frequência e regras."
+      },
+      {
+        "n": 3,
+        "title": "Automatize e monitore",
+        "text": "Robôs capturam NF-e e NFS-e via certificado digital. Painel de entregas mostra o status em tempo real."
+      },
+      {
+        "n": 4,
+        "title": "Entregue com confiança",
+        "text": "Comprovantes organizados automaticamente. Relatórios prontos para apresentar ao cliente com um clique."
+      }
+    ]
+  },
+  "notifications": {
+    "headline": "Notificações que chegam no cliente Automaticamente.",
+    "subheadline": "WhatsApp, e-mail e sistema",
+    "text": "Avisa prazo, entrega e cobrança no canal certo, sem a equipe ficar cobrando no manual.",
+    "types": ["E-mail", "WhatsApp", "Sistema", "Alertas"]
+  },
+  "obligations": {
+    "tag": "AGENDA DE OBRIGAÇÕES",
+    "headline": "Todas as obrigações configuradas e monitoradas",
+    "items": [
+      { "area": "FISCAL", "freq": "Mensal", "name": "DIEF", "desc": "Declaração de Informações Econômico-Fiscais" },
+      { "area": "PESSOAL", "freq": "Anual", "name": "13º Salário — 1ª Parcela", "desc": "Pagamento em novembro" },
+      { "area": "PESSOAL", "freq": "Anual", "name": "13º Salário — Integral", "desc": "Pagamento em dezembro" },
+      { "area": "PESSOAL", "freq": "Mensal", "name": "Adiantamento de Salário", "desc": "Quinzenal ou mensal" },
+      { "area": "FISCAL", "freq": "Mensal", "name": "SPED Fiscal", "desc": "Escrituração fiscal digital" },
+      { "area": "FISCAL", "freq": "Mensal", "name": "EFD Contribuições", "desc": "PIS/COFINS e contribuições" },
+      { "area": "FISCAL", "freq": "Mensal", "name": "PGDAS-D", "desc": "Simples Nacional — apuração mensal" },
+      { "area": "FISCAL", "freq": "Mensal", "name": "DAS Mensal", "desc": "Documento de arrecadação Simples" },
+      { "area": "FISCAL", "freq": "Mensal", "name": "DCTF Web", "desc": "Declaração de débitos e créditos" }
+    ]
+  },
+  "testimonials": [
+    {
+      "quote": "Reduzimos o tempo gasto com obrigações em 70%. O painel de entregas mudou completamente a forma como a equipe trabalha.",
+      "name": "Fernanda Lima",
+      "role": "Sócia-diretora, Lima & Associados",
+      "initials": "FL"
+    },
+    {
+      "quote": "A automação de NF-e via certificado digital foi um divisor de águas. Hoje o sistema faz tudo sozinho a cada 60 minutos.",
+      "name": "Rafael Souza",
+      "role": "Contador, Souza Contabilidade",
+      "initials": "RS"
+    },
+    {
+      "quote": "Gerencio mais de 200 CNPJs e nunca perco um prazo. Os alertas automáticos me deram uma tranquilidade que não tinha há anos.",
+      "name": "Cláudia Mendes",
+      "role": "Gerente Fiscal, Grupo Mendes",
+      "initials": "CM"
+    }
+  ],
+  "about": {
+    "headline": "Impostograma",
+    "paragraphs": [
+      "Uma plataforma criada para centralizar e simplificar a operação do escritório contábil. Clientes, obrigações, documentos, tarefas, automações fiscais e financeiro ficam organizados em um único ambiente, dando à equipe uma visão clara do que precisa ser feito, quem é responsável e o que depende do cliente.",
+      "Com segurança, integrações e arquitetura em API, a plataforma se conecta às ferramentas que o escritório já utiliza. Bancos, Serpro, WhatsApp, e-mail e outros sistemas fazem parte do mesmo fluxo, reduzindo retrabalho e eliminando informações espalhadas."
+    ],
+    "pillars": [
+      {
+        "title": "Segurança",
+        "text": "Login, papéis (admin, financeiro, externo) e acesso por módulo e empresa."
+      },
+      {
+        "title": "Compatibilidade",
+        "text": "Uso via navegador em qualquer plataforma, com integrações que encaixam na operação atual."
+      },
+      {
+        "title": "API",
+        "text": "Arquitetura aberta para integrar, expandir e ligar o escritório a outros sistemas."
+      }
+    ]
+  },
+  "pricing": {
+    "tag": "PLANOS",
+    "headline": "Preço justo para todo escritório",
+    "billing": ["Mensal", "Anual −20%"],
+    "plans": [
+      {
+        "name": "STARTER",
+        "price": "R$297",
+        "period": "/mês",
+        "description": "Para escritórios pequenos iniciando a automação",
+        "features": [
+          "Até 20 empresas ativas",
+          "Painel de Entregas",
+          "Agenda de obrigações",
+          "Gestão documental básica",
+          "1 usuário"
+        ],
+        "cta": "Começar grátis"
+      },
+      {
+        "name": "PROFISSIONAL",
+        "price": "R$697",
+        "period": "/mês",
+        "popular": true,
+        "description": "Para escritórios em crescimento com mais volume",
+        "features": [
+          "Até 100 empresas ativas",
+          "Todos os 6 módulos",
+          "Automação NF-e/NFS-e",
+          "Processos Molde ilimitados",
+          "Visão do cliente",
+          "5 usuários",
+          "Suporte prioritário"
+        ],
+        "cta": "Começar grátis"
+      },
+      {
+        "name": "ENTERPRISE",
+        "price": "Sob consulta",
+        "description": "Para grandes grupos com alto volume de clientes",
+        "features": [
+          "Empresas ilimitadas",
+          "Usuários ilimitados",
+          "Robôs de classificação IA",
+          "API completa + webhooks",
+          "SLA 99,9% dedicado",
+          "Gerente de conta exclusivo"
+        ],
+        "cta": "Falar com especialista"
+      }
+    ]
+  },
+  "finalCta": {
+    "headline": "Pronto para transformar seu escritório?",
+    "description": "14 dias grátis, sem cartão de crédito. Configure em menos de 10 minutos.",
+    "buttons": [
+      { "label": "Começar gratuitamente", "href": "/teste-gratis" },
+      { "label": "Agendar demonstração", "href": "/demonstracao" }
+    ],
+    "note": "Sem compromisso · Cancele quando quiser · Dados 100% no Brasil · LGPD compliant"
+  },
+  "footer": {
+    "tagline": "Automação fiscal inteligente para escritórios contábeis brasileiros.",
+    "columns": {
+      "Plataforma": [
+        "Gestão de Empresas",
+        "Painel de Entregas",
+        "Automação NF-e/NFS-e",
+        "Documentos",
+        "Financeiro",
+        "Certificados Digitais"
+      ],
+      "Empresa": ["Sobre nós", "Blog", "Carreiras", "Imprensa", "Contato"],
+      "Suporte": ["Documentação", "Central de Ajuda", "Status do sistema", "API Docs"],
+      "Legal": ["Termos de uso", "Privacidade", "LGPD", "Cookies"]
+    },
+    "copyright": "© 2026 Impostograma. Todos os direitos reservados.",
+    "security": "Hospedagem no Brasil · Conforme LGPD"
+  },
+  "assets": {
+    "present": [
+      "images/logo-impostograma-white.svg",
+      "images/logo-impostograma-violet.svg",
+      "index.html",
+      "style.css",
+      "script.js"
+    ],
+    "referencedButMissingInRepo": [
+      "images/alt_image.png",
+      "images/painel-kanban.png",
+      "favicon.ico"
+    ],
+    "interactionsCurrent": [
+      "Header sticky ao scroll",
+      "Tabs de módulos (6)",
+      "Tabs do painel Entregas/Documentos/Financeiro",
+      "Toggle mensal/anual (visual only)",
+      "Ticker de obrigações com loop",
+      "Smooth scroll da nav"
+    ]
+  }
+}

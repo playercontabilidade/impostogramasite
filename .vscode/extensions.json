@@ -1,5 +1,6 @@
 {
-    "recommendations": [
-        "m365-copilot-vscode.m365-copilot-vscode"
-    ]
+  "recommendations": [
+    "ms-vscode.live-server",
+    "ecmel.vscode-html-css"
+  ]
 }
