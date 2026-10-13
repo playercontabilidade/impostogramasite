@@ -26,7 +26,7 @@
   ticker.innerHTML += ticker.innerHTML;
 
   /* Reveal on scroll (with stagger in groups) */
-  $$(".pillars, .pricing, .cases").forEach((g) => $$(".reveal", g).forEach((el, i) => el.style.setProperty("--d", `${i * 0.09}s`)));
+  $$(".pillars, .cases").forEach((g) => $$(".reveal", g).forEach((el, i) => el.style.setProperty("--d", `${i * 0.09}s`)));
   const io = new IntersectionObserver((entries) => {
     entries.forEach((e) => { if (e.isIntersecting) { e.target.classList.add("is-in"); io.unobserve(e.target); } });
   }, { threshold: 0.12 });
@@ -119,24 +119,6 @@
   bindSwitch($(".switch"), (b) => {
     cases.classList.add("is-swapping");
     setTimeout(() => { cases.dataset.mode = b.dataset.mode; cases.classList.remove("is-swapping"); }, reduced ? 0 : 260);
-  });
-
-  const prices = $$("[data-price]");
-  bindSwitch($("#billing"), (b) => {
-    const annual = b.dataset.billing === "annual";
-    prices.forEach((n) => {
-      const from = Number(n.textContent.replace(/\D/g, ""));
-      const to = Math.round(Number(n.dataset.price) * (annual ? 0.8 : 1));
-      if (reduced) { n.textContent = `R$${to}`; return; }
-      const t0 = performance.now();
-      const step = (t) => {
-        const p = Math.min(1, (t - t0) / 450);
-        n.textContent = `R$${Math.round(from + (to - from) * p)}`;
-        if (p < 1) requestAnimationFrame(step);
-      };
-      requestAnimationFrame(step);
-    });
-    $$(".amount span").forEach((s) => (s.textContent = "/mês"));
   });
 
   /* Modules */

@@ -33,7 +33,7 @@ Restructure the Impostograma marketing landing into a professional, serious, int
 |--------|----------|
 | Markup | Rewrite `index.html` with unique section IDs |
 | Styles | Rewrite `style.css` around CSS variables |
-| Behavior | Rewrite `script.js`: modules tabs, pricing toggle (with annual math), GSAP journey |
+| Behavior | Rewrite `script.js`: modules tabs, GSAP journey |
 | Motion lib | GSAP 3 + ScrollTrigger via CDN |
 | Content source | `content/inventory.json` is the canonical copy archive; HTML embeds the same text |
 | Fonts | **DM Sans** (Google Fonts: 400, 500, 700, 800) |
@@ -47,7 +47,7 @@ Restructure the Impostograma marketing landing into a professional, serious, int
 - `.vscode/extensions.json` — recommend Live Preview + HTML CSS Support
 - Keep `content/` as archive (do not delete)
 
-**Reduced motion:** If `prefers-reduced-motion: reduce`, draw the journey path fully and skip scroll scrubbing; keep instant module/pricing state changes.
+**Reduced motion:** If `prefers-reduced-motion: reduce`, draw the journey path fully and skip scroll scrubbing; keep instant module state changes.
 
 ---
 
@@ -76,7 +76,7 @@ Restructure the Impostograma marketing landing into a professional, serious, int
 - Page default background: `--bg` (not full purple)
 - Dark bands: `--deep` only (journey section, optional mockup chrome)
 - Primary CTAs / active states: `--bright`
-- Gradient only on: featured pricing card, final CTA band, and subtle hero corner wash
+- Gradient only on: final CTA band and subtle hero corner wash
 - Journey path stroke on dark band: `#582AFE` → soft lavender/white (readable on `--deep`; not deep→bright which would vanish into the background)
 - No purple glow, no heavy multi-layer shadows, no emoji decoration
 
@@ -94,9 +94,8 @@ Restructure the Impostograma marketing landing into a professional, serious, int
 | 5 | Journey | `#como-funciona` | Dark; SVG scroll-link (hero interaction) |
 | 6 | Modules | `#modulos` | 6-item list + detail pane |
 | 7 | Testimonials | `#depoimentos` | 3 quotes |
-| 8 | Pricing | `#precos` | 3 plans; annual toggle applies −20% |
-| 9 | Final CTA | `#contato` | Gradient band |
-| 10 | Footer | — | 4 link columns |
+| 8 | Final CTA | `#contato` | Gradient band |
+| 9 | Footer | — | 4 link columns |
 
 Fix current bugs: duplicate IDs, empty placeholder sections, dual footers.
 
@@ -107,8 +106,8 @@ Fix current bugs: duplicate IDs, empty placeholder sections, dual footers.
 ### 5.1 Header
 
 - Logo left (violet asset on light; white asset on dark sections if header overlays — prefer always light header so violet logo stays)
-- Nav center: Sobre · Funcionalidades · Como funciona · Módulos · Preços (smooth scroll to unique anchors)
-- Right: Instagram · “Entrar” text → `https://impostograma.com/` · button “Começar grátis” → `/teste-gratis`
+- Nav center: Sobre · Funcionalidades · Como funciona · Módulos (smooth scroll to unique anchors)
+- Right: “Entrar” → `https://impostograma.com/`
 - Sticky: white/95% + backdrop blur after ~12px scroll
 
 ### 5.2 Hero
@@ -162,15 +161,7 @@ Fix current bugs: duplicate IDs, empty placeholder sections, dual footers.
 - Three quotes from inventory
 - Clean cards or open layout; avoid loud gold star clusters (subtle or omit)
 
-### 5.9 Pricing
-
-- Toggle Mensal / Anual (−20%)
-- **Behavior:** annual mode shows `floor(monthly * 0.8)` (or equivalent display) for Starter/Pro; Enterprise stays “Sob consulta”
-- Starter & Enterprise: white surfaces
-- Profissional: `--gradient` surface, “Mais popular”, light text
-- Feature lists from inventory
-
-### 5.10 Final CTA + Footer
+### 5.9 Final CTA + Footer
 
 - CTA: gradient rounded band; inventory headline/sub/buttons/LGPD note
 - Footer: `--surface-muted`; violet logo; tagline; columns Plataforma / Empresa / Suporte / Legal; © 2026
@@ -188,11 +179,7 @@ Scroll position
 
 Click module item
   → set active index
-  → render detail from modules[] 
-
-Click billing toggle
-  → set billingMode monthly|annual
-  → update visible prices for Starter/Pro
+  → render detail from modules[]
 ```
 
 No backend. No form posts in this phase (CTAs are links).
@@ -204,7 +191,7 @@ No backend. No form posts in this phase (CTAs are links).
 - Unique landmarks and heading order
 - Focus visible on buttons/links
 - Contrast: white text only on `--deep` or gradient regions dark enough for AA
-- Keyboard: nav, module list, billing toggle
+- Keyboard: nav, module list
 - Manual checks: desktop 1280+, tablet, mobile 375; reduced-motion on
 - Visual check against Finpay reference: whitespace, not purple-on-purple chrome
 
@@ -222,9 +209,8 @@ No backend. No form posts in this phase (CTAs are links).
 1. Page reads as one professional Impostograma brand composition (not Finpay clone with teal leftovers)
 2. Journey line visibly links steps while scrolling
 3. All inventory copy present (no silent content loss)
-4. Pricing annual toggle changes numbers
-5. No duplicate IDs / leftover empty sections / dual footers
-6. Lighthouse-friendly: no layout thrash; GSAP only for journey + light reveals if used
+4. No duplicate IDs / leftover empty sections / dual footers
+5. Lighthouse-friendly: no layout thrash; GSAP only for journey + light reveals if used
 
 ---
 

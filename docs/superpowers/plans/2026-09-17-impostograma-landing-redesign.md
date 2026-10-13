@@ -12,7 +12,7 @@
 
 ## Global Constraints
 
-- Colors: `--deep #250D7D`, `--bright #582AFE`, gradient deep→bright only on Pro plan + final CTA + subtle hero wash
+- Colors: `--deep #250D7D`, `--bright #582AFE`, gradient deep→bright only on final CTA + subtle hero wash
 - Font: DM Sans 400/500/700/800
 - Copy: from `content/inventory.json` only
 - Journey path stroke on dark: bright → light (not deep→bright)
@@ -27,7 +27,7 @@
 |------|------|
 | `index.html` | Full page structure |
 | `style.css` | Tokens + layout + responsive |
-| `script.js` | Header, ticker, modules, pricing math, GSAP journey |
+| `script.js` | Header, ticker, modules, GSAP journey |
 | `.github/agents/impostograma-landing-page.agent.md` | Align agent with new system |
 | `.vscode/extensions.json` | Live Preview + HTML CSS Support |
 
@@ -37,7 +37,7 @@
 
 **Files:** Create/overwrite `index.html`
 
-- [ ] Build semantic page: header, hero, ticker, pillars, bento, journey (SVG + 4 nodes), modules, about (`#sobre`), testimonials, pricing, CTA, footer
+- [ ] Build semantic page: header, hero, ticker, pillars, bento, journey (SVG + 4 nodes), modules, about (`#sobre`), testimonials, CTA, footer
 - [ ] Unique IDs per spec page map + `#sobre`
 - [ ] Embed inventory copy verbatim
 - [ ] Hero mock = HTML/CSS panels (no missing PNGs)
@@ -48,7 +48,7 @@
 **Files:** Create/overwrite `style.css`
 
 - [ ] Tokens from spec
-- [ ] Header sticky, hero split, ticker, pillars, bento grid, journey, modules, pricing, CTA, footer
+- [ ] Header sticky, hero split, ticker, pillars, bento grid, journey, modules, CTA, footer
 - [ ] Responsive breakpoints ~900px / 640px
 - [ ] Reduced-motion overrides
 
@@ -59,7 +59,6 @@
 - [ ] Header scrolled class
 - [ ] Ticker clone loop
 - [ ] Modules tab render
-- [ ] Billing toggle with annual `Math.round(monthly * 0.8)`
 - [ ] GSAP ScrollTrigger journey path + node `.is-active`
 - [ ] Smooth nav scroll
 - [ ] Guard when GSAP missing / reduced motion
@@ -81,4 +80,4 @@
 
 ## Spec coverage check
 
-Hero, pillars, bento, journey, modules, testimonials, pricing+annual, CTA, footer, tokens, a11y reduced-motion, agent/extensions — all tasked.
+Hero, pillars, bento, journey, modules, testimonials, CTA, footer, tokens, a11y reduced-motion, agent/extensions — all tasked.

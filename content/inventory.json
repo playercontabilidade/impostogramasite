@@ -23,7 +23,6 @@
   "links": {
     "instagram": "https://www.instagram.com/impostograma",
     "login": "https://impostograma.com/",
-    "trial": "/teste-gratis",
     "demo": "/demonstracao"
   },
   "nav": [
@@ -31,14 +30,12 @@
     { "label": "Funcionalidades", "href": "#funcionalidades" },
     { "label": "Como funciona", "href": "#como-funciona" },
     { "label": "Módulos", "href": "#modulos" },
-    { "label": "Preços", "href": "#precos" },
     { "label": "Contato", "href": "#contato" }
   ],
   "hero": {
     "headline": "Automação fiscal que transforma escritórios contábeis.",
     "subheadline": "Gerencie obrigações, documentos e clientes em uma plataforma integrada — do cadastro à entrega.",
     "ctas": [
-      { "label": "Começar grátis", "href": "/teste-gratis" },
       { "label": "Ver demonstração", "href": "#demonstracao" }
     ],
     "metrics": [
@@ -346,66 +343,13 @@
       }
     ]
   },
-  "pricing": {
-    "tag": "PLANOS",
-    "headline": "Preço justo para todo escritório",
-    "billing": ["Mensal", "Anual −20%"],
-    "plans": [
-      {
-        "name": "STARTER",
-        "price": "R$297",
-        "period": "/mês",
-        "description": "Para escritórios pequenos iniciando a automação",
-        "features": [
-          "Até 20 empresas ativas",
-          "Painel de Entregas",
-          "Agenda de obrigações",
-          "Gestão documental básica",
-          "1 usuário"
-        ],
-        "cta": "Começar grátis"
-      },
-      {
-        "name": "PROFISSIONAL",
-        "price": "R$697",
-        "period": "/mês",
-        "popular": true,
-        "description": "Para escritórios em crescimento com mais volume",
-        "features": [
-          "Até 100 empresas ativas",
-          "Todos os 6 módulos",
-          "Automação NF-e/NFS-e",
-          "Processos Molde ilimitados",
-          "Visão do cliente",
-          "5 usuários",
-          "Suporte prioritário"
-        ],
-        "cta": "Começar grátis"
-      },
-      {
-        "name": "ENTERPRISE",
-        "price": "Sob consulta",
-        "description": "Para grandes grupos com alto volume de clientes",
-        "features": [
-          "Empresas ilimitadas",
-          "Usuários ilimitados",
-          "Robôs de classificação IA",
-          "API completa + webhooks",
-          "SLA 99,9% dedicado",
-          "Gerente de conta exclusivo"
-        ],
-        "cta": "Falar com especialista"
-      }
-    ]
-  },
   "finalCta": {
     "headline": "Pronto para transformar seu escritório?",
-    "description": "14 dias grátis, sem cartão de crédito. Configure em menos de 10 minutos.",
+    "description": "Dados no Brasil · LGPD.",
     "buttons": [
-      { "label": "Começar gratuitamente", "href": "/teste-gratis" },
       { "label": "Agendar demonstração", "href": "/demonstracao" }
     ],
-    "note": "Sem compromisso · Cancele quando quiser · Dados 100% no Brasil · LGPD compliant"
+    "note": "Dados 100% no Brasil · LGPD compliant"
   },
   "footer": {
     "tagline": "Automação fiscal inteligente para escritórios contábeis brasileiros.",
@@ -442,7 +386,6 @@
       "Header sticky ao scroll",
       "Tabs de módulos (6)",
       "Tabs do painel Entregas/Documentos/Financeiro",
-      "Toggle mensal/anual (visual only)",
       "Ticker de obrigações com loop",
       "Smooth scroll da nav"
     ]

@@ -1,5 +1,5 @@
 ---
-description: "Use when updating the Impostograma landing page, editing HTML sections, CSS styling, responsive behavior, marketing copy, or content in this static website project. Best for homepage changes, pricing blocks, feature sections, scroll journey, and launch-ready page edits."
+description: "Use when updating the Impostograma landing page, editing HTML sections, CSS styling, responsive behavior, marketing copy, or content in this static website project. Best for homepage changes, feature sections, scroll journey, and launch-ready page edits."
 name: "Impostograma Landing Page Specialist"
 tools: [read, search, edit]
 user-invocable: true
@@ -14,7 +14,7 @@ You are the specialist for the Impostograma marketing website. Keep the landing 
 ## Design system (locked)
 - Font: **DM Sans** (400/500/700/800)
 - Colors: `--deep #250D7D`, `--bright #582AFE`, page bg `#FAFAFC`
-- Gradient `#250D7D → #582AFE` only on featured pricing, final CTA, and subtle hero wash
+- Gradient `#250D7D → #582AFE` only on final CTA and subtle hero wash
 - Journey path stroke on dark: `#582AFE → light` (not deep→bright)
 - Serious Finpay-like whitespace; no purple full-bleed page, no glow, no emoji chrome
 - GSAP + ScrollTrigger (CDN) allowed for the journey scroll-link only

@@ -18,7 +18,7 @@ Os arquivos originais (`index.html`, `style.css`, `script.js`) permanecem intact
 
 ## Navegação
 
-Sobre nós · Funcionalidades · Como funciona · Módulos · Preços · Contato  
+Sobre nós · Funcionalidades · Como funciona · Módulos · Contato  
 CTA header: Entrar → https://impostograma.com/  
 Instagram: https://www.instagram.com/impostograma
 
@@ -29,7 +29,7 @@ Instagram: https://www.instagram.com/impostograma
 **Headline:** Automação fiscal que transforma escritórios contábeis.  
 **Sub:** Gerencie obrigações, documentos e clientes em uma plataforma integrada — do cadastro à entrega.
 
-**CTAs:** Começar grátis · Ver demonstração  
+**CTAs:** Ver demonstração  
 **Métricas:** +40% Produtividade · −70% Retrabalho e erros operacionais  
 **Imagem:** `images/alt_image.png` (referenciada; verificar se está no Pages deploy)
 
@@ -120,22 +120,11 @@ DIEF, 13º (1ª/Integral), Adiantamento, SPED, EFD, PGDAS-D, DAS, DCTF Web
 Texto institucional + pilares: Segurança · Compatibilidade · API  
 Integrações citadas: Bancos, Serpro, WhatsApp, e-mail
 
-## Preços
-
-| Plano | Preço | Destaque |
-|-------|-------|----------|
-| STARTER | R$297/mês | até 20 empresas, 1 usuário |
-| PROFISSIONAL | R$697/mês | MAIS POPULAR — 100 empresas, 6 módulos, 5 usuários |
-| ENTERPRISE | Sob consulta | ilimitado, IA, API, SLA |
-
-Toggle: Mensal / Anual −20% (UI; lógica de preço anual ainda não aplicada no JS)
-
 ## CTA final
 
 Pronto para transformar seu escritório?  
-14 dias grátis, sem cartão.  
-Começar gratuitamente · Agendar demonstração  
-Nota: Sem compromisso · Cancele quando quiser · Dados 100% no Brasil · LGPD
+Agendar demonstração  
+Nota: Dados 100% no Brasil · LGPD
 
 ## Footer
 
@@ -150,7 +139,6 @@ Colunas: Plataforma · Empresa · Suporte · Legal
 - Header sticky
 - Tabs de módulos
 - Tabs do painel demo
-- Toggle billing (visual)
 - Ticker CSS loop
 - Smooth scroll nav
 
