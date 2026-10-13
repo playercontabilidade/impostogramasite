@@ -123,7 +123,7 @@ Integrações citadas: Bancos, Serpro, WhatsApp, e-mail
 ## CTA final
 
 Pronto para transformar seu escritório?  
-Agendar demonstração  
+Agendar demonstração → https://wa.me/5563992559175  
 Nota: Dados 100% no Brasil · LGPD
 
 ## Footer

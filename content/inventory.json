@@ -23,7 +23,7 @@
   "links": {
     "instagram": "https://www.instagram.com/impostograma",
     "login": "https://impostograma.com/",
-    "demo": "/demonstracao"
+    "demo": "https://wa.me/5563992559175"
   },
   "nav": [
     { "label": "Sobre nós", "href": "#sobre" },
@@ -36,7 +36,7 @@
     "headline": "Automação fiscal que transforma escritórios contábeis.",
     "subheadline": "Gerencie obrigações, documentos e clientes em uma plataforma integrada — do cadastro à entrega.",
     "ctas": [
-      { "label": "Ver demonstração", "href": "#demonstracao" }
+      { "label": "Ver demonstração", "href": "https://wa.me/5563992559175" }
     ],
     "metrics": [
       { "value": "+40%", "label": "Produtividade" },
@@ -347,7 +347,7 @@
     "headline": "Pronto para transformar seu escritório?",
     "description": "Dados no Brasil · LGPD.",
     "buttons": [
-      { "label": "Agendar demonstração", "href": "/demonstracao" }
+      { "label": "Agendar demonstração", "href": "https://wa.me/5563992559175" }
     ],
     "note": "Dados 100% no Brasil · LGPD compliant"
   },
